@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pkb-react/static/css/main.5f361e03.chunk.css",
+    "main.js": "/pkb-react/static/js/main.836d9d16.chunk.js",
+    "main.js.map": "/pkb-react/static/js/main.836d9d16.chunk.js.map",
+    "runtime-main.js": "/pkb-react/static/js/runtime-main.4c2cb7b9.js",
+    "runtime-main.js.map": "/pkb-react/static/js/runtime-main.4c2cb7b9.js.map",
+    "static/js/2.d3b23429.chunk.js": "/pkb-react/static/js/2.d3b23429.chunk.js",
+    "static/js/2.d3b23429.chunk.js.map": "/pkb-react/static/js/2.d3b23429.chunk.js.map",
+    "index.html": "/pkb-react/index.html",
+    "precache-manifest.c9648047c97ff130c439778fedd32733.js": "/pkb-react/precache-manifest.c9648047c97ff130c439778fedd32733.js",
+    "service-worker.js": "/pkb-react/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/pkb-react/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d3b23429.chunk.js.LICENSE.txt": "/pkb-react/static/js/2.d3b23429.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/pkb-react/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c2cb7b9.js",
+    "static/js/2.d3b23429.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.836d9d16.chunk.js"
+  ]
+}
