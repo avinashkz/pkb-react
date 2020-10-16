@@ -1,6 +1,6 @@
 export default {
-  title: '',
-  subtitle: '',
-  overview: '',
-  description: '',
+	title: "",
+	subtitle: "",
+	overview: "",
+	description: "",
 };
