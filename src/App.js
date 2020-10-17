@@ -1,28 +1,21 @@
 import React from "react";
-import logo from "assets/logo.svg";
-import "styles/App.css";
+// import "styles/App.css";
+import books from "data/books/books";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-          Edit
-					{" "}
-					<code>src/App.js</code>
-					{" "}
-          and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-          Learn React
-				</a>
-			</header>
+			<div gutter={16}>
+				{books.map(book => (
+					<div key={book.title} span={8}>
+						<img alt="" src={require("" + book.thumbnail)}/>
+						<span>{book.title}</span>
+						<span>{book.overview.slice(0,200)}</span>
+						<button type="primary">Buy</button>
+						<button>Goodreads</button>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 }
