@@ -1,8 +1,10 @@
+import thumbnail from "assets/books-thumbnail/ini-njan-urangatte.jpg";
+
 export default {
 	title: "Ini Njan Urangatte",
 	subtitle: "And Now Let Me Sleep (1973)",
 	overview: "One of the most widely read books in the Malayalam language, it is the story of Karna developed through the thought process of Draupadi and her life.  Without deviating from the story, situations or the epic grandeour of the Mahabharata, it lends a new interpretation to their story.",
 	description: "",
-	thumbnail: "./assets/books-thumbnail/ini-njan-urangatte.jpg",
-	image: "./assets/books-image/ini-njan-urangatte.jpg"
+	thumbnail: thumbnail,
+	image: "../assets/books-image/ini-njan-urangatte.jpg"
 };

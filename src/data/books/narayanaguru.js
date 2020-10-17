@@ -1,8 +1,10 @@
+import thumbnail from "assets/books-thumbnail/narayanaguru.jpg";
+
 export default {
 	title: "NARAYANAGURU",
 	subtitle: "Category : COLLECTIONS & SELECTED WORKS",
 	overview: "The book is a collection of essays on the great social reformer of Kerala and spiritual leader Sri. Narayana Guru published on the event of his birth centenary. It gives a rare insight into the person and activities of a visionary.",
 	description: "",
-	thumbnail: "./assets/books-thumbnail/narayanaguru.jpg",
-	image: "./assets/books-image/narayanaguru.jpg"
+	thumbnail: thumbnail,
+	image: "../assets/books-image/narayanaguru.jpg"
 };
