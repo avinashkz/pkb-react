@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from "react";
 import styled from "styled-components/macro";
-// import { NavLink } from "react-router-dom";
+import { Link as UnstyledNavLink } from "react-router-dom";
 
 // TODO: Handle very small screen sizes
 const Container = styled.article`
@@ -24,10 +24,15 @@ const Item = styled.a`
 	font-size: 16px;
 `;
 
+const NavLink = styled(UnstyledNavLink)`
+	grid-area: ${({area}) => area};
+	color: white;
+	font-size: 16px;
+`;
+
 
 const NavBar = () => {
 	const [scroll, setScroll] = useState(0);
-	// console.log(scroll);
 	useEffect(() => {
 		const onScroll = ({target}) => 
 			setScroll(target.documentElement.scrollTop);
@@ -41,9 +46,9 @@ const NavBar = () => {
 			<Item area='title'>P.K Balakrishnan</Item>
 
 			<Item area='buy'>Buy Books</Item>
-			<Item area='about'>About</Item>
+			<NavLink area='about' to='about'>About</NavLink>
 			<Item area='books'>Books</Item>
-			<Item area='gallery'>Gallery</Item>
+			<NavLink area='gallery' to='gallery'>Gallery</NavLink>
 
 			<Item area='mail'>EM</Item>
 			<Item area='facebook'>FB</Item>
