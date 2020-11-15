@@ -15,7 +15,7 @@ const Container = styled.article`
 	grid-column-gap: 3%;
 	align-items: center;
 	justify-items: center;
-	background-color: ${({scroll}) => scroll < 100 ? "none" : "black"};
+	background-color: ${({scroll}) => scroll < 100 ? "black" : "black"};
 `;
 
 const Item = styled.a`
