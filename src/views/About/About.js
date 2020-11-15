@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Container = styled.article``;
+const Container = styled.article`
+`;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+	margin: 0;
+	padding-top: 50px;
+`;
 
 const SubTitle = styled.h2``;
 
@@ -32,12 +36,6 @@ function About () {
 			<SubTitle>Brief Political Encounters in His Life </SubTitle>
 			<Text>{"His voracious reading habit had already created a high degree of political awareness in Balakrishnan. Reading through the numerous volumes of history of the Indian National Congress and a close watch of the political activities around him had invigorated him to join the main stream political movement of the time. Participation in the quit India movement landed him in jail. It was in prison that he first met people like C.Achutha Menon and K.Karunakaran (both were to become Chief Ministers later) who were serving their jail term as political prisoners. "}</Text>
 			<Text>{"He then spent a few years as full time member of Prajamandalam, the Congress unit of Cochin State which later split and formed the Kerala Socialist Party under Mathai Manjoornan. He had strong convictions and he stood by his beliefs. He soon found that these were not sound 'political' qualities and finding politics unfit for him and himself unfit for politics, literally ran away from it at the middle of the night with his meager belongings tucked under his arm. The net result of all this was a ruined academic future. He put to full use his capabilities as an orator and writer during this period of political activity. He was the force behind the weekly 'Azad', the mouthpiece of the student Congress started in 1947. Later he edited the weekly of the Kerala Socialist party - 'Socialist'. He wrote innumerable political articles during this period in these and many other publications. He had established his reputation as a writer by this time."}</Text>
-
-
-
-
-
-
 		</Container>);
 }
 

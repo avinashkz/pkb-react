@@ -43,11 +43,11 @@ const NavBar = () => {
 
 	return (
 		<Container scroll={scroll}>
-			<Item area='title'>P.K Balakrishnan</Item>
+			<NavLink area='title' to='/'>P.K Balakrishnan</NavLink>
 
-			<Item area='buy'>Buy Books</Item>
+			<Item area='buy' target='_blank' href='https://dcbookstore.com/authors/balakrishnan-p-k'>Buy Books</Item>
 			<NavLink area='about' to='about'>About</NavLink>
-			<Item area='books'>Books</Item>
+			<NavLink area='books'to='/#books'>Books</NavLink>
 			<NavLink area='gallery' to='gallery'>Gallery</NavLink>
 
 			<Item area='mail'>EM</Item>
