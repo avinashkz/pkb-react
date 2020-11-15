@@ -1,12 +1,11 @@
 import React from "react";
-// import "styles/App.css";
-import About from "views/About";
+import About from "views/About/Main";
 import Cover from "components/Cover";
 import Books from "components/Books";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
 
-function App() {
+function Home() {
 	return (
 		<div className="App">
 			<NavBar />
@@ -16,7 +15,8 @@ function App() {
 			<Books />
 			<Footer />
 		</div>
+		
 	);
 }
 
-export default App;
+export default Home;
