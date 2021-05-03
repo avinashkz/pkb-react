@@ -4,7 +4,7 @@ import { Link as UnstyledNavLink } from "react-router-dom";
 
 // TODO: Handle very small screen sizes
 const Container = styled.article`
-	position: fixed;
+	// position: fixed;
 	height: 30px;
 	width: 100%;
 	z-index: 1;
@@ -46,9 +46,9 @@ const NavBar = () => {
 			<NavLink area='title' to='/'>P.K Balakrishnan</NavLink>
 
 			<Item area='buy' target='_blank' href='https://dcbookstore.com/authors/balakrishnan-p-k'>Buy Books</Item>
-			<NavLink area='about' to='about'>About</NavLink>
+			<NavLink area='about' to='/bout'>About</NavLink>
 			<NavLink area='books'to='/#books'>Books</NavLink>
-			<NavLink area='gallery' to='gallery'>Gallery</NavLink>
+			<NavLink area='gallery' to='/gallery'>Gallery</NavLink>
 
 			<Item area='mail'>EM</Item>
 			<Item area='facebook'>FB</Item>
