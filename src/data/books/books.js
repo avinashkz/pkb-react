@@ -12,6 +12,22 @@ import inovelSiddhiyumSadhanayum from "./inovel-siddhiyum-sadhanayum";
 import veerapulakom from "./veerapulakom";
 import verittaChintakal from "./veritta-chintakal";
 
+export const books = {
+	"ini-njan-urangatte": iniNjanUrangatte,
+	"jaathivyavasthithium-keralacharithravum": jaathivyavasthithiumKeralacharithravum,
+	"narayanaguru": narayanaguru,
+	"tippu-sultan": tippuSultan,
+	"pk-balakrishnante-lekhanangal": pkBalakrishnanteLekhanangal,
+	"pluto-priyappetta-pluto": plutoPriyappettaPluto,
+	"chandu-menon-oru-padanam": chanduMenonOruPadanam,
+	"ezhuthachante-kala": ezhuthachanteKala,
+	"kavyakala-kumaranasaniloode": kavyakalaKumaranasaniloode,
+	"keraleeyathayum-mattum": keraleeyathayumMattum,
+	"inovel-siddhiyum-sadhanayum": inovelSiddhiyumSadhanayum,
+	"veerapulakom": veerapulakom,
+	"veritta-chintakal": verittaChintakal,
+};
+
 export default [
 	iniNjanUrangatte,
 	jaathivyavasthithiumKeralacharithravum,

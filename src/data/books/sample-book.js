@@ -4,5 +4,5 @@ export default {
 	overview: "",
 	description: "",
 	thumbnail: "../assets/books-thumbnail/*.jpg",
-	image: "../assets/books-image/*.jpg"
+	image: "../assets/books-cover/*.jpg"
 };
