@@ -5,6 +5,7 @@ import Home from "views/Home";
 import About from "views/About/About";
 import Gallery from "views/Gallery";
 import PageLayout from "components/PageLayout";
+import Book from "views/Book";
 
 function App() {
 	return (
@@ -17,6 +18,9 @@ function App() {
 						</Route>
 						<Route path="/gallery">
 							<Gallery />
+						</Route>
+						<Route path="/books/:book/">
+							<Book />
 						</Route>
 						<Route exact path="/">
 							<Home />
