@@ -22,7 +22,7 @@ const Title = styled.h1`
 const Shelf = styled.article`
 	grid-area: books;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	justify-self: stretch;
 	justify-items: center;
 	grid-row-gap: 50px;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Container = styled.article`
+const Container = styled.div`
 	height: 50px;
 	display: grid;
 	padding-left: 5%;

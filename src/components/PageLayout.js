@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
 
-const Container = styled.article`
+const Container = styled.div`
 	margin: 0;
 	padding: 0;
 	display: grid;

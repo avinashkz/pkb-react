@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import header from "assets/header.jpg";
 
-const Container = styled.article`
+const Container = styled.div`
     background-image: url(${header});
     opacity: 0.9;
     min-height: auto;

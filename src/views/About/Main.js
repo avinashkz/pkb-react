@@ -2,7 +2,7 @@ import React from "react";
 import { Link as UnstyledLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-const Container = styled.article`
+const Container = styled.div`
 	display: grid;
 	grid-template-areas:
 		'title'

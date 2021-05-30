@@ -3,13 +3,13 @@ import { useRouteMatch } from "react-router-dom";
 import styled from "styled-components/macro";
 import {books} from "data/books/books";
 
-const Container = styled.article`
+const Container = styled.div`
 display: grid;
 grid-template-areas:
 'image'
 'contents';
 `;
-const Contents = styled.article`
+const Contents = styled.div`
 grid-area: contents;
 `;
 

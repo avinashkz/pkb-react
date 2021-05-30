@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-const Container = styled.article`
+const Container = styled.div`
 `;
 
 const Title = styled.h1`
-	margin: 0;
-	padding-top: 50px;
+	margin: 50px 0 0 0;
 `;
 
 const SubTitle = styled.h2``;

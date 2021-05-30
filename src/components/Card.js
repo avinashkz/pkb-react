@@ -3,15 +3,15 @@ import { Link as UnstyledLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 
-const HEIGHT = "466px";
-const WIDTH = "300px";
+const WIDTH = 200;
+const HEIGHT = 1.55 * WIDTH;
 
-const Container = styled.article`
+const Container = styled.div`
 	background-image: ${({ cover }) => `url(${cover})`};
 	background-size: cover;
 	justify-items: center;
-	height: ${HEIGHT};
-	width: ${WIDTH};
+	height: ${`${HEIGHT}px`};
+	width: ${`${WIDTH}px`};
 	border-radius: 15px;
 	box-shadow: 0 1px 0 rgba(8, 11, 14, 0.06), 
 		0 16px 16px -1px rgba(8, 11, 14, 0.1);
@@ -37,14 +37,14 @@ const Link = styled(UnstyledLink)`
   // }
 `;
 
-const BlurContainer = styled.article`
+const BlurContainer = styled.div`
 	display: grid;
 	grid-template-areas:
 		'. .     .       . '
 		'. buy   details . ';
 	grid-template-rows: 1fr max-content;
-	height: ${HEIGHT};
-	width: ${WIDTH};
+	height: ${`${HEIGHT}px`};
+	width: ${`${WIDTH}px`};
 	border-radius: 15px;
 	position: absolute;
 	background: rgba(0,0,0,0.3);

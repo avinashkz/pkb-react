@@ -1,15 +1,20 @@
 import React from "react";
 // import "styles/App.css";
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
+import history from "app/history";
 import Home from "views/Home";
 import About from "views/About/About";
 import Gallery from "views/Gallery";
 import PageLayout from "components/PageLayout";
 import Book from "views/Book";
 
+history.listen(() => {
+	window.scrollTo(0, 0);
+});
+
 function App() {
 	return (
-		<Router basename='/'>
+		<Router basename='/' history={history}>
 			<div className="App">
 				<PageLayout>
 					<Switch>
