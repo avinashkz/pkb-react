@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import NavBar from "components/NavBar";
-import Footer from "components/Footer";
+// import NavBar from "components/NavBar";
+// import Footer from "components/Footer";
 
 const Container = styled.div`
 	margin: 0;
@@ -13,9 +13,9 @@ const Container = styled.div`
 function PageLayout ({children}) {
 	return (
 		<Container>
-			<NavBar />
+			{/* <NavBar /> */}
 			{children}
-			<Footer />
+			{/* <Footer /> */}
 		</ Container>
 	);
 }

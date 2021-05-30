@@ -5,7 +5,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-	margin: 50px 0 0 0;
+	// margin: 50px 0 0 0;
 `;
 
 const SubTitle = styled.h2``;
