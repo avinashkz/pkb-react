@@ -3,11 +3,11 @@ import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import history from "app/history";
 import Home from "views/Home";
-import About from "views/About/About";
+import About from "views/About";
 import Gallery from "views/Gallery";
 import PageLayout from "components/PageLayout";
 import Book from "views/Book";
-import Books from "views/Books/Main";
+import Books from "views/Books";
 
 history.listen(() => {
 	window.scrollTo(0, 0);
