@@ -4,8 +4,9 @@ import { Link as UnstyledNavLink } from "react-router-dom";
 
 // TODO: Handle very small screen sizes
 const Container = styled.div`
-	// position: fixed;
-	height: 30px;
+	position: fixed;
+	opacity: 0.6;
+	height: 50px;
 	width: 100%;
 	z-index: 1;
 	display: grid;
@@ -22,12 +23,20 @@ const Item = styled.a`
 	grid-area: ${({area}) => area};
 	color: white;
 	font-size: 16px;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
 `;
 
 const NavLink = styled(UnstyledNavLink)`
 	grid-area: ${({area}) => area};
 	color: white;
 	font-size: 16px;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
 `;
 
 
@@ -47,7 +56,7 @@ const NavBar = () => {
 
 			<Item area='buy' target='_blank' href='https://dcbookstore.com/authors/balakrishnan-p-k'>Buy Books</Item>
 			<NavLink area='about' to='/about'>About</NavLink>
-			<NavLink area='books'to='/#books'>Books</NavLink>
+			<NavLink area='books'to='/books'>Books</NavLink>
 			<NavLink area='gallery' to='/gallery'>Gallery</NavLink>
 
 			<Item area='mail'>EM</Item>

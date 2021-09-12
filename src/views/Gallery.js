@@ -1,10 +1,16 @@
 import React from "react";
+import styled from "styled-components/macro";
 
-function Gallery () {
+
+const Container = styled.div`
+	margin-top: 50px;
+`;
+
+function Gallery() {
 	return (
-		<article>
+		<Container>
 			All my images..
-		</article>);
+		</Container>);
 }
 
 export default Gallery;

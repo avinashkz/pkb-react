@@ -1,14 +1,16 @@
 import React from "react";
-import About from "views/About/Main";
+// import About from "views/About/Main";
 import Cover from "components/Cover";
-import Books from "views/Books/Main";
+import NavBar from "components/NavBar";
+// import Books from "views/Books/Main";
 
 function Home() {
 	return (
 		<>
+			<NavBar />
 			<Cover/>
-			<About />
-			<Books />
+			{/* <About />
+			<Books /> */}
 		</>		
 	);
 }

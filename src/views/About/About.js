@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components/macro";
 
 const Container = styled.div`
+	margin: 50px 5% 0 5%;
+	text-align: justify;
+	text-justify: inter-word;
 `;
 
 const Title = styled.h1`
-	margin: 50px 0 0 0;
 `;
 
 const SubTitle = styled.h2``;

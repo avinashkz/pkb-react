@@ -1,12 +1,13 @@
 import React from "react";
 // import "styles/App.css";
-import {HashRouter as Router, Route, Switch} from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import history from "app/history";
 import Home from "views/Home";
 import About from "views/About/About";
 import Gallery from "views/Gallery";
 import PageLayout from "components/PageLayout";
 import Book from "views/Book";
+import Books from "views/Books/Main";
 
 history.listen(() => {
 	window.scrollTo(0, 0);
@@ -16,26 +17,32 @@ function App() {
 	return (
 		<Router basename='/' history={history}>
 			<div className="App">
-				<PageLayout>
-					<Switch>
-						<Route path="/about">
-							<About/>
-						</Route>
-						<Route path="/gallery">
-							<Gallery />
-						</Route>
-						<Route path="/books/:book/">
-							<Book />
-						</Route>
-						<Route exact path="/">
-							<Home />
-						</Route>
-					</Switch>
-				</PageLayout>
-				
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route path="/:page/">
+						<PageLayout>
+							<Route path="/about">
+								<About />
+							</Route>
+							<Route path="/gallery">
+								<Gallery />
+							</Route>
+							<Route exact path="/books/">
+								<Books />
+							</Route>
+							<Route path="/books/:book/">
+								<Book />
+							</Route>
+						</PageLayout>
+					</Route>
+					{/* <Route>
+						<div>Page not found</div>
+					</Route> */}
+				</Switch>
 			</div>
 		</Router>
-		
 	);
 }
 

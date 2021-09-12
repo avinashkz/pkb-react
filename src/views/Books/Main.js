@@ -12,7 +12,7 @@ const Container = styled.article`
 	align-items: center;
 	justify-items: center;
 	padding-bottom: 75px;
-	margin: 0px 50px;
+	margin: 50px 50px 0 50px;
 `;
 
 const Title = styled.h1`
@@ -22,11 +22,11 @@ const Title = styled.h1`
 const Shelf = styled.article`
 	grid-area: books;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	justify-self: stretch;
 	justify-items: center;
-	grid-row-gap: 50px;
-	grid-column-gap: 100px;
+	grid-row-gap: min(5%, 40px);
+	grid-column-gap: min(5%, 40px);
 `;
 
 function Books() {

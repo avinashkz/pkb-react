@@ -5,11 +5,11 @@ import header from "assets/header.jpg";
 
 const Container = styled.div`
     background-image: url(${header});
-    opacity: 0.9;
+    // opacity: 0.9;
     min-height: auto;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     display: grid;
     grid-template-areas:

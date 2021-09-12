@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { Link as UnstyledLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
@@ -12,40 +12,37 @@ const Container = styled.div`
 	justify-items: center;
 	height: ${`${HEIGHT}px`};
 	width: ${`${WIDTH}px`};
-	border-radius: 15px;
+	border-radius: 10px;
 	box-shadow: 0 1px 0 rgba(8, 11, 14, 0.06), 
 		0 16px 16px -1px rgba(8, 11, 14, 0.1);
 `;
 
-const Button = styled.button`
-	grid-area: ${({ area }) => area};
-	border-radius: 10px;
-	width: 120px;
-	height: 45px;
-	font-size: 18px;
-	display: inline-block;
-	background-color: white;
-	margin-bottom: 50px;
-	z-index: 1;
-`;
-
 const Link = styled(UnstyledLink)`
 	grid-area: ${({ area }) => area};
-  // text-decoration: none;
-  // &:hover {
-  //   text-decoration: none;
-  // }
+	border-radius: 8px;
+	padding: 5px 20px;
+	font-size: 18px;
+	display: inline-block;
+	color: black;
+	background-color: white;
+	z-index: 1;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	margin: auto;
 `;
 
 const BlurContainer = styled.div`
 	display: grid;
 	grid-template-areas:
 		'. .     .       . '
-		'. buy   details . ';
-	grid-template-rows: 1fr max-content;
+		'. buy   details . '
+		'. .     .       . ';
+	grid-template-rows: 1fr max-content 0.15fr;
 	height: ${`${HEIGHT}px`};
 	width: ${`${WIDTH}px`};
-	border-radius: 15px;
+	border-radius: 10px;
 	position: absolute;
 	background: rgba(0,0,0,0.3);
 `;
@@ -63,7 +60,7 @@ function Card({ book }) {
 			{/* <Description>{book.overview.slice(0,200)}</Description> */}
 			{display && (
 				<BlurContainer>
-					<Button type="button" area="buy">Buy</Button>
+					<Link area="buy">Buy</Link>
 					<Link area="details" to={`books/${book.id}/`}>Details</Link>
 				</BlurContainer>
 			)}
