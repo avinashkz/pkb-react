@@ -4,7 +4,6 @@ import header from "assets/header.jpg";
 
 const Container = styled.div`
     background-image: url(${header});
-    // opacity: 0.9;
     min-height: auto;
     background-size: cover;
     background-position: center;
@@ -23,8 +22,7 @@ const SubTitle = styled.h1`
     grid-area: subtitle;
     color: white;
     justify-self: center;
-    font-size:
-
+    font-size: 48px;
 `;
 
 function Cover() {

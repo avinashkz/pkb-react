@@ -1,5 +1,4 @@
 import React from "react";
-// import "styles/App.css";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import history from "app/history";
 import Home from "views/Home";
@@ -21,10 +20,10 @@ function App() {
 					<Route exact path="/">
 						<Home />
 					</Route>
+					<Route path="/books/:book/">
+						<Book />
+					</Route>
 					<Route path="/:page/">
-						<Route path="/books/:book/">
-							<Book />
-						</Route>
 						<PageLayout>
 							<Route path="/about">
 								<About />

@@ -1,4 +1,5 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import { FaEnvelope,FaFacebookSquare } from 'react-icons/fa';
 import styled from "styled-components/macro";
 import { Link as UnstyledNavLink } from "react-router-dom";
 
@@ -17,52 +18,60 @@ const Container = styled.div`
 	align-items: center;
 	justify-items: center;
 	background-color: black;
-	// opacity: ${({scroll}) => scroll < 100 ? "1" : "1"};
-	opacity: ${({page}) => page == "home" ? "0.6" : "1"};
+	// opacity: ${({ scroll }) => scroll < 100 ? "1" : "1"};
+	opacity: ${({ page }) => page == "home" ? "0.6" : "1"};
 `;
 
 const Item = styled.a`
-	grid-area: ${({area}) => area};
+	grid-area: ${({ area }) => area};
 	color: white;
 	font-size: 16px;
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
 	}
+	font-weight: 500;
+	font-size: 18px;
 `;
 
 const NavLink = styled(UnstyledNavLink)`
-	grid-area: ${({area}) => area};
+	grid-area: ${({ area }) => area};
 	color: white;
 	font-size: 16px;
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
 	}
+	font-weight: 500;
+	font-size: 18px;
+`;
+
+const HomeLink = styled(NavLink)`
+	font-weight: 600;
+	font-size: 20px;
 `;
 
 
 const NavBar = ({ page }) => {
 	const [scroll, setScroll] = useState(0);
 	useEffect(() => {
-		const onScroll = ({target}) => 
+		const onScroll = ({ target }) =>
 			setScroll(target.documentElement.scrollTop);
 		window.addEventListener("scroll", onScroll);
 		return () => window.removeEventListener("scroll", onScroll);
 	}
-	, [scroll]);
+		, [scroll]);
 
 	return (
 		<Container scroll={scroll} page={page}>
-			<NavLink area='title' to='/'>P.K Balakrishnan</NavLink>
+			<HomeLink area='title' to='/'>P.K BALAKRISHNAN</HomeLink>
 
 			<Item area='buy' target='_blank' href='https://dcbookstore.com/authors/balakrishnan-p-k'>Buy Books</Item>
 			<NavLink area='about' to='/about'>About</NavLink>
-			<NavLink area='books'to='/books'>Books</NavLink>
+			<NavLink area='books' to='/books'>Books</NavLink>
 			{/* <NavLink area='gallery' to='/gallery'>Gallery</NavLink> */}
-
-			<Item area='mail'>EM</Item>
-			<Item area='facebook'>FB</Item>
+			<Item area='mail' target='_blank' href='mailto:pkjaya@hotmail.com'><FaEnvelope /></Item>
+			<Item area='facebook' target='_blank' href='https://www.facebook.com/pkbauthor'><FaFacebookSquare /></Item>
 		</Container>
 	);
 };
