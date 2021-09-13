@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pkb-react/static/css/main.27dc5b3d.chunk.css",
-    "main.js": "/pkb-react/static/js/main.f38c34a2.chunk.js",
-    "main.js.map": "/pkb-react/static/js/main.f38c34a2.chunk.js.map",
+    "main.js": "/pkb-react/static/js/main.ec59b56e.chunk.js",
+    "main.js.map": "/pkb-react/static/js/main.ec59b56e.chunk.js.map",
     "runtime-main.js": "/pkb-react/static/js/runtime-main.e9bc3ca9.js",
     "runtime-main.js.map": "/pkb-react/static/js/runtime-main.e9bc3ca9.js.map",
     "static/js/2.ecfeb0e8.chunk.js": "/pkb-react/static/js/2.ecfeb0e8.chunk.js",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.e9bc3ca9.js",
     "static/js/2.ecfeb0e8.chunk.js",
     "static/css/main.27dc5b3d.chunk.css",
-    "static/js/main.f38c34a2.chunk.js"
+    "static/js/main.ec59b56e.chunk.js"
   ]
 }
