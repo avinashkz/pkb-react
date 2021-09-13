@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link as UnstyledLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
@@ -33,12 +33,29 @@ const Link = styled(UnstyledLink)`
 	margin: auto;
 `;
 
+const ExternalLink = styled.a`
+	grid-area: ${({ area }) => area};
+	border-radius: 8px;
+	padding: 5px 20px;
+	font-size: 18px;
+	display: inline-block;
+	color: black;
+	background-color: white;
+	z-index: 1;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	margin: auto;
+`;
+
+
 const BlurContainer = styled.div`
 	display: grid;
 	grid-template-areas:
-		'. .     .       . '
-		'. buy   details . '
-		'. .     .       . ';
+		'. .       . '
+		'. buttons . '
+		'. .       . ';
 	grid-template-rows: 1fr max-content 0.15fr;
 	height: ${`${HEIGHT}px`};
 	width: ${`${WIDTH}px`};
@@ -47,12 +64,17 @@ const BlurContainer = styled.div`
 	background: rgba(0,0,0,0.3);
 `;
 
+const ButtonContainer = styled.div`
+	grid-area: buttons;
+	display: flex;
+`;
+
 function Card({ book }) {
 	const [display, setDisplay] = useState(false);
 	return (
-		<Container 
-			cover={book.cover} 
-			onMouseEnter={() => setDisplay(true)} 
+		<Container
+			cover={book.cover}
+			onMouseEnter={() => setDisplay(true)}
 			onMouseLeave={() => setDisplay(false)}
 		>
 			{/* <Image alt="" src={book.cover}/> */}
@@ -60,8 +82,10 @@ function Card({ book }) {
 			{/* <Description>{book.overview.slice(0,200)}</Description> */}
 			{display && (
 				<BlurContainer>
-					<Link area="buy">Buy</Link>
-					<Link area="details" to={`books/${book.id}/`}>Details</Link>
+					<ButtonContainer>
+						{book?.link && <ExternalLink area="buy" href={book.link}>Buy</ExternalLink>}
+						<Link area="details" to={`books/${book.id}/`}>Details</Link>
+					</ButtonContainer>
 				</BlurContainer>
 			)}
 		</Container>

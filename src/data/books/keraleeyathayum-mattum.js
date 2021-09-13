@@ -39,6 +39,7 @@ export default {
 	subtitle: "Category : ESSAYS",
 	overview: "The studies in this book were written over a span of 18 years from 1960. They were born out of a sense of duty impelled by the warmth of his personal affection.",
 	description: "",
+	link: "https://dcbookstore.com/books/keraleeyathayum-mattum-p-k-balakrishnante-asamahrutha-rachanakal",
 	thumbnail,
 	cover,
 	contents: Contents

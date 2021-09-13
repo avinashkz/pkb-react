@@ -34,6 +34,10 @@ const Item = styled.a`
 	font-size: 18px;
 `;
 
+const Icon = styled(Item)`
+	font-size: 22px;
+`;
+
 const NavLink = styled(UnstyledNavLink)`
 	grid-area: ${({ area }) => area};
 	color: white;
@@ -70,8 +74,8 @@ const NavBar = ({ page }) => {
 			<NavLink area='about' to='/about'>About</NavLink>
 			<NavLink area='books' to='/books'>Books</NavLink>
 			{/* <NavLink area='gallery' to='/gallery'>Gallery</NavLink> */}
-			<Item area='mail' target='_blank' href='mailto:pkjaya@hotmail.com'><FaEnvelope /></Item>
-			<Item area='facebook' target='_blank' href='https://www.facebook.com/pkbauthor'><FaFacebookSquare /></Item>
+			<Icon area='mail' target='_blank' href='mailto:pkjaya@hotmail.com'><FaEnvelope /></Icon>
+			<Icon area='facebook' target='_blank' href='https://www.facebook.com/pkbauthor'><FaFacebookSquare /></Icon>
 		</Container>
 	);
 };
