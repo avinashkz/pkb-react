@@ -2,39 +2,57 @@ import React from "react";
 import { useRouteMatch } from "react-router-dom";
 import styled from "styled-components/macro";
 import { books } from "data/books/books";
+import NavBar from "components/NavBar";
+import Footer from "components/Footer";
+
 
 const Container = styled.div`
-	// height: calc(100%-50px);
 	display: grid;
+	height: 100vh;
 	grid-template-areas:
-	'.     contents'
-	'image contents'
-	'.     contents';
+		'nav    nav'
+		'.      contents'
+		'footer footer';
 	grid-column-gap: 25px;
-	margin: 50px 20px 0 20px;
+	grid-template-rows: min-content auto min-content;
+	grid-template-columns: 2fr 3fr;
+`;
+
+const Contents = styled.div`
+	grid-area: contents;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	margin: 50px 10% 0 0;
 	text-align: justify;
 	text-justify: inter-word;
 `;
-const Contents = styled.div`
-	grid-area: contents;
-	// height: calc(100% - 50px);
-	// overflow: auto;
-`;
 
 const Image = styled.img`
-	grid-area: image;
-	// height: 466px;
-	// width: 300px;
-	display: fixed;
+	height: 30vw;
+	width: 20vw;
+	position: fixed;
+	top: 25%;
+	left: 10%;
+`;
+const ImageContainer = styled.div`
+	// grid-area: image;
 `;
 
 const Book = () => {
 	const { params: { book } } = useRouteMatch();
 	return (
-		<Container>
-			<Image alt="" src={books[book].cover} />
-			<Contents>{books[book].contents()}</Contents>
-		</Container>
+		<>
+			<Container>
+				<NavBar />
+				<ImageContainer>
+					<Image alt="" src={books[book].cover} />
+				</ImageContainer>
+				<Contents>{books[book].contents()}</Contents>
+				<Footer layout="grid"/>
+			</Container>
+		</>
 	);
 };
 

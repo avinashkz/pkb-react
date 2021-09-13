@@ -22,6 +22,9 @@ function App() {
 						<Home />
 					</Route>
 					<Route path="/:page/">
+						<Route path="/books/:book/">
+							<Book />
+						</Route>
 						<PageLayout>
 							<Route path="/about">
 								<About />
@@ -31,9 +34,6 @@ function App() {
 							</Route>
 							<Route exact path="/books/">
 								<Books />
-							</Route>
-							<Route path="/books/:book/">
-								<Book />
 							</Route>
 						</PageLayout>
 					</Route>

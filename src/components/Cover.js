@@ -27,12 +27,14 @@ const SubTitle = styled.h1`
 
 `;
 
-function Cover () {
-	return (
-		<Container>
-			<SubTitle>Critic. Historian. Novalist. Journalist</SubTitle>
-		</Container>
-	);
+function Cover() {
+    return (
+		<>
+            <Container>
+                <SubTitle>Critic. Historian. Novalist. Journalist</SubTitle>
+            </Container>
+        </>
+    );
 }
 
 export default Cover;

@@ -11,8 +11,7 @@ const Container = styled.article`
 	grid-template-columns: auto;
 	align-items: center;
 	justify-items: center;
-	padding-bottom: 75px;
-	margin: 50px 50px 0 50px;
+	margin: 50px;
 `;
 
 const Title = styled.h1`
@@ -25,7 +24,7 @@ const Shelf = styled.article`
 	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	justify-self: stretch;
 	justify-items: center;
-	grid-row-gap: min(5%, 40px);
+	grid-row-gap: 40px;
 	grid-column-gap: min(5%, 40px);
 `;
 

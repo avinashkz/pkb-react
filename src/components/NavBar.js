@@ -4,19 +4,21 @@ import { Link as UnstyledNavLink } from "react-router-dom";
 
 // TODO: Handle very small screen sizes
 const Container = styled.div`
+	grid-area: nav;
 	position: fixed;
-	opacity: 0.6;
 	height: 50px;
 	width: 100%;
 	z-index: 1;
 	display: grid;
 	grid-template-areas:
-		'. title . buy about books gallery .  mail facebook .';
+		'. title . buy about books . .  mail facebook .';
 	grid-template-columns: min-content max-content auto repeat(4, max-content) auto repeat(2, max-content) min-content;
 	grid-column-gap: 3%;
 	align-items: center;
 	justify-items: center;
-	background-color: ${({scroll}) => scroll < 100 ? "black" : "black"};
+	background-color: black;
+	// opacity: ${({scroll}) => scroll < 100 ? "1" : "1"};
+	opacity: ${({page}) => page == "home" ? "0.6" : "1"};
 `;
 
 const Item = styled.a`
@@ -40,7 +42,7 @@ const NavLink = styled(UnstyledNavLink)`
 `;
 
 
-const NavBar = () => {
+const NavBar = ({ page }) => {
 	const [scroll, setScroll] = useState(0);
 	useEffect(() => {
 		const onScroll = ({target}) => 
@@ -51,13 +53,13 @@ const NavBar = () => {
 	, [scroll]);
 
 	return (
-		<Container scroll={scroll}>
+		<Container scroll={scroll} page={page}>
 			<NavLink area='title' to='/'>P.K Balakrishnan</NavLink>
 
 			<Item area='buy' target='_blank' href='https://dcbookstore.com/authors/balakrishnan-p-k'>Buy Books</Item>
 			<NavLink area='about' to='/about'>About</NavLink>
 			<NavLink area='books'to='/books'>Books</NavLink>
-			<NavLink area='gallery' to='/gallery'>Gallery</NavLink>
+			{/* <NavLink area='gallery' to='/gallery'>Gallery</NavLink> */}
 
 			<Item area='mail'>EM</Item>
 			<Item area='facebook'>FB</Item>
