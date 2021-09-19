@@ -15,6 +15,7 @@ const Container = styled.div`
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	display: grid;
+	min-height: 100vh;
 	grid-template-areas:
 		'nav    nav'
 		'.      contents'
