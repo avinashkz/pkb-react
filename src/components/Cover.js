@@ -29,7 +29,7 @@ function Cover() {
     return (
 		<>
             <Container>
-                <SubTitle>Critic. Historian. Novalist. Journalist</SubTitle>
+                <SubTitle>Critic. Historian. Novelist. Journalist</SubTitle>
             </Container>
         </>
     );

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link as UnstyledLink } from "react-router-dom";
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import { TiShoppingCart } from 'react-icons/ti';
 import PropTypes from "prop-types";
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 
 const WIDTH = 200;
 const HEIGHT = 1.55 * WIDTH;
@@ -17,10 +19,10 @@ const Container = styled.div`
 		0 16px 16px -1px rgba(8, 11, 14, 0.1);
 `;
 
-const Link = styled(UnstyledLink)`
+const linkCSS = css`
 	grid-area: ${({ area }) => area};
 	border-radius: 8px;
-	padding: 5px 20px;
+	padding: 5px 8px;
 	font-size: 18px;
 	display: inline-block;
 	color: black;
@@ -33,20 +35,12 @@ const Link = styled(UnstyledLink)`
 	margin: auto;
 `;
 
+const Link = styled(UnstyledLink)`
+	${linkCSS}
+`;
+
 const ExternalLink = styled.a`
-	grid-area: ${({ area }) => area};
-	border-radius: 8px;
-	padding: 5px 20px;
-	font-size: 18px;
-	display: inline-block;
-	color: black;
-	background-color: white;
-	z-index: 1;
-	text-decoration: none;
-	&:hover {
-		text-decoration: none;
-	}
-	margin: auto;
+	${linkCSS}
 `;
 
 
@@ -69,6 +63,20 @@ const ButtonContainer = styled.div`
 	display: flex;
 `;
 
+const iconCSS = css`
+	margin-top: -4px;
+	margin-left: 1px;
+	vertical-align: middle;
+`;
+
+const Cart = styled(TiShoppingCart)`
+	${iconCSS}
+`;
+
+const Info = styled(AiOutlineInfoCircle)`
+	${iconCSS}
+`;
+
 function Card({ book }) {
 	const [display, setDisplay] = useState(false);
 	return (
@@ -77,14 +85,11 @@ function Card({ book }) {
 			onMouseEnter={() => setDisplay(true)}
 			onMouseLeave={() => setDisplay(false)}
 		>
-			{/* <Image alt="" src={book.cover}/> */}
-			{/* <div>{book?.contents()}</div> */}
-			{/* <Description>{book.overview.slice(0,200)}</Description> */}
 			{display && (
 				<BlurContainer>
 					<ButtonContainer>
-						{book?.link && <ExternalLink area="buy" href={book.link}>Buy</ExternalLink>}
-						<Link area="details" to={`books/${book.id}/`}>Details</Link>
+						{book?.link && <ExternalLink area="buy" href={book.link}>Buy<Cart /></ExternalLink>}
+						<Link area="details" to={`books/${book.id}/`}>Details <Info /></Link>
 					</ButtonContainer>
 				</BlurContainer>
 			)}
