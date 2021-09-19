@@ -11,7 +11,7 @@ const Container = styled.article`
 	grid-template-columns: auto;
 	align-items: center;
 	justify-items: center;
-	margin: 50px;
+	padding: 50px;
 `;
 
 const Title = styled.h1`

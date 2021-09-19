@@ -4,11 +4,17 @@ import styled from "styled-components/macro";
 import { books } from "data/books/books";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
+import background from "assets/bg-alpha2.png";
 
 
 const Container = styled.div`
+	background-image: url(${background});
+	min-height: auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	display: grid;
-	height: 100vh;
 	grid-template-areas:
 		'nav    nav'
 		'.      contents'

@@ -7,8 +7,8 @@ const Container = styled.div`
     min-height: auto;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     background-repeat: no-repeat;
+    height: 100vh;
     display: grid;
     grid-template-areas:
         '.'
