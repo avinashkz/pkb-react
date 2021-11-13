@@ -14,8 +14,9 @@ const NavBar = () => (
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="me-auto">
 					<Nav.Link area='buy' target='_blank' href='https://dcbookstore.com/authors/balakrishnan-p-k'>Buy Books</Nav.Link>
-					<Nav.Link area='about' as={Link} to='/about'>About</Nav.Link>
-					<Nav.Link area='books' as={Link} to='/books'>Books</Nav.Link>
+					<Nav.Link as={Link} to='/about'>About</Nav.Link>
+					<Nav.Link as={Link} to='/books'>Books</Nav.Link>
+					<Nav.Link as={Link} to='/gallery'>Gallery</Nav.Link>
 				</Nav>
 				<Nav>
 					<Nav.Link area='mail' target='_blank' href='mailto:pkjaya@hotmail.com'><FaEnvelope size={25} /></Nav.Link>
