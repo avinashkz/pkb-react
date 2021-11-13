@@ -12,6 +12,10 @@ const Container = styled.div`
 	grid-column-gap: min(5%, 40px);
 `;
 
+const Image = styled(Card.Img)`
+	padding: 3px;
+`;
+
 function importAll(r) {
 	return r.keys().map(r);
 }
@@ -21,9 +25,9 @@ function Gallery() {
 	return (
 		<Container>
 			{thumbnails.map((image, index) => (
-					<Card>
-						<Card.Img key={index} src={image.default} />
-					</Card>
+				<Card>
+					<Image key={index} src={image.default} />
+				</Card>
 			))}
 		</Container>);
 }
