@@ -21,7 +21,7 @@ function App() {
 					<Route exact path="/">
 						<Home />
 					</Route>
-					<Route exact path={["/about", "/gallery", "/books"]}>
+					<Route path={["/about", "/gallery", "/books"]}>
 						<PageLayout>
 							<Route path="/about">
 								<About />
@@ -29,14 +29,16 @@ function App() {
 							<Route path="/gallery">
 								<Gallery />
 							</Route>
-							<Route path="/books">
+							<Route exact path="/books/:book/">
+								<Book />
+							</Route>
+							<Route exact path="/books">
 								<Books />
 							</Route>
+
 						</PageLayout>
 					</Route>
-					<Route path="/books/:book/">
-						<Book />
-					</Route>
+					
 					{/* <Route>
 						<div>Page not found</div>
 					</Route> */}
