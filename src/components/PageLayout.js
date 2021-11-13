@@ -17,11 +17,16 @@ const Container = styled.div`
 	display: grid;
 `;
 
+const ContentsContainer = styled.div`
+	min-height: calc(100vh - 110px);
+`;
 function PageLayout({ children }) {
 	return (
 		<Container>
 			<NavBar />
-			{children}
+			<ContentsContainer>
+				{children}
+			</ContentsContainer>
 			<Footer />
 		</ Container>
 	);

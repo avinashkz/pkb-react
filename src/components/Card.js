@@ -88,7 +88,7 @@ function Card({ book }) {
 			{display && (
 				<BlurContainer>
 					<ButtonContainer>
-						{book?.link && <ExternalLink area="buy" href={book.link}>Buy<Cart /></ExternalLink>}
+						{book?.link && <ExternalLink area="buy"  target='_blank' href={book.link}>Buy<Cart /></ExternalLink>}
 						<Link area="details" to={`books/${book.id}/`}>Details <Info /></Link>
 					</ButtonContainer>
 				</BlurContainer>

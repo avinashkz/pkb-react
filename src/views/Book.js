@@ -2,13 +2,9 @@ import React from "react";
 import { useRouteMatch } from "react-router-dom";
 import styled from "styled-components/macro";
 import { books } from "data/books/books";
-import UnStyledContainer from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-
-const Container = styled(UnStyledContainer)`
-	min-height: calc(100vh - 110px);
-`;
 
 const Image = styled.img`
 	@media (max-width: 768px) {

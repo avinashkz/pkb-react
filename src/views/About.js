@@ -7,8 +7,7 @@ const Container = styled.div`
 	text-justify: inter-word;
 `;
 
-const Title = styled.h1`
-`;
+const Title = styled.h1``;
 
 const SubTitle = styled.h2``;
 
