@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
-
 import background from "assets/bg-alpha2.png";
+
 const Container = styled.div`
 	background-image: url(${background});
 	min-height: 100vh;
@@ -17,7 +17,7 @@ const Container = styled.div`
 	display: grid;
 `;
 
-function PageLayout ({children}) {
+function PageLayout({ children }) {
 	return (
 		<Container>
 			<NavBar />
