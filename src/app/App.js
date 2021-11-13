@@ -7,6 +7,7 @@ import Gallery from "views/Gallery";
 import PageLayout from "components/PageLayout";
 import Book from "views/Book";
 import Books from "views/Books";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 history.listen(() => {
 	window.scrollTo(0, 0);

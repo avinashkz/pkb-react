@@ -7,7 +7,7 @@ import Footer from "components/Footer";
 import background from "assets/bg-alpha2.png";
 const Container = styled.div`
 	background-image: url(${background});
-	min-height: auto;
+	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
