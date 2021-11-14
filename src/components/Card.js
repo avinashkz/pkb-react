@@ -66,12 +66,12 @@ const CardBody = styled(Card.Body)`
 
 const CardButton = styled(Button)`
 	width: 100%;
-	margin-top: auto;
 `;
 
-const ToolTipContainer = styled.div`
+const ButtonContainer = styled.div`
 	width: 150px;
 	align-self: center;
+	margin-top: auto;
 `;
 
 const renderTooltip = (props) => (
@@ -95,31 +95,29 @@ function BookCard({ book }) {
 				</DetailsLink>
 				{
 					book?.link ? (
-						<ToolTipContainer>
+						<ButtonContainer>
 							<CardButton
-								className="mt-auto"
 								variant="dark"
 								target='_blank'
 								href={book.link}
 							>
 								Buy <Cart size={20} />
 							</CardButton>
-						</ToolTipContainer>
+						</ButtonContainer>
 					) : (
 						<OverlayTrigger
 							placement="right"
 							delay={{ show: 250, hide: 400 }}
 							overlay={renderTooltip}
 						>
-							<ToolTipContainer>
+							<ButtonContainer>
 								<CardButton
-									className="mt-auto"
 									variant="dark"
 									disabled
 								>
 									Buy <Cart size={20} />
 								</CardButton>
-							</ToolTipContainer>
+							</ButtonContainer>
 						</OverlayTrigger>)
 				}
 			</CardBody>
