@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components/macro";
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Tooltip from 'react-bootstrap/Tooltip'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 const WIDTH = 300;
 const HEIGHT = 1.3 * WIDTH;
@@ -58,22 +60,32 @@ const DetailsLink = styled(Link)`
 `;
 
 const CardBody = styled(Card.Body)`
-	padding: 10px 0 10px 0;
 	padding-left: 0;
 	padding-right: 0;
 `;
 
 const CardButton = styled(Button)`
+	width: 100%;
+	margin-top: auto;
+`;
+
+const ToolTipContainer = styled.div`
 	width: 150px;
 	align-self: center;
 `;
+
+const renderTooltip = (props) => (
+	<Tooltip id="button-tooltip" {...props}>
+		Unavailable
+	</Tooltip>
+);
 
 
 function BookCard({ book }) {
 	return (
 		<CardContainer className="text-center">
 			<Link to={`books/${book.id}/`}>
-				<CardImage src={book?.cover} className="shadow"/>
+				<CardImage src={book?.cover} className="shadow" />
 			</Link>
 			<CardBody className="d-flex flex-column">
 				<DetailsLink to={`books/${book.id}/`}>
@@ -81,16 +93,35 @@ function BookCard({ book }) {
 						{book?.shortTitle || book.title}
 					</Card.Title>
 				</DetailsLink>
-				<CardButton
-					className="mt-auto"
-					variant="dark"
-					target={book?.link && '_blank'}
-					href={book.link}
-					disabled={!book?.link}
-				>
-					Buy <Cart size={20} />
-				</CardButton>
-
+				{
+					book?.link ? (
+						<ToolTipContainer>
+							<CardButton
+								className="mt-auto"
+								variant="dark"
+								target='_blank'
+								href={book.link}
+							>
+								Buy <Cart size={20} />
+							</CardButton>
+						</ToolTipContainer>
+					) : (
+						<OverlayTrigger
+							placement="right"
+							delay={{ show: 250, hide: 400 }}
+							overlay={renderTooltip}
+						>
+							<ToolTipContainer>
+								<CardButton
+									className="mt-auto"
+									variant="dark"
+									disabled
+								>
+									Buy <Cart size={20} />
+								</CardButton>
+							</ToolTipContainer>
+						</OverlayTrigger>)
+				}
 			</CardBody>
 		</CardContainer>
 	)
