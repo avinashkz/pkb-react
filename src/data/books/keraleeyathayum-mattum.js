@@ -35,7 +35,8 @@ const Contents = () => {
 };
 export default {
 	id: "keraleeyathayum-mattum",
-	title: "KERALEEYATHAYUM MATTUM P K BALAKRISHNANTE ASAMAHRUTHA RACHANAKAL",
+	title: "Keraleeyathayum Mattum P K Balakrishnante Asamahrutha Rachanakal",
+	shortTitle: "Keraleeyathayum Mattum",
 	subtitle: "Category : ESSAYS",
 	overview: "The studies in this book were written over a span of 18 years from 1960. They were born out of a sense of duty impelled by the warmth of his personal affection.",
 	description: "",
