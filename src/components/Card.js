@@ -1,22 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link as UnstyledLink } from "react-router-dom";
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { TiShoppingCart } from 'react-icons/ti';
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components/macro";
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
-const WIDTH = 200;
-const HEIGHT = 1.55 * WIDTH;
+const WIDTH = 300;
+const HEIGHT = 1.3 * WIDTH;
 
-const Container = styled.div`
-	background-image: ${({ cover }) => `url(${cover})`};
-	background-size: cover;
-	justify-items: center;
+const CardImage = styled(Card.Img)`
 	height: ${`${HEIGHT}px`};
+	margin: 0;
+	padding: 0;
+`;
+
+const CardContainer = styled(Card)`
 	width: ${`${WIDTH}px`};
-	border-radius: 10px;
-	box-shadow: 0 1px 0 rgba(8, 11, 14, 0.06), 
-		0 16px 16px -1px rgba(8, 11, 14, 0.1);
+	border: none;
+	border-right: 5px double #D3D3D3;
+	border-bottom: 5px double #D3D3D3;
 `;
 
 const linkCSS = css`
@@ -39,30 +43,6 @@ const Link = styled(UnstyledLink)`
 	${linkCSS}
 `;
 
-const ExternalLink = styled.a`
-	${linkCSS}
-`;
-
-
-const BlurContainer = styled.div`
-	display: grid;
-	grid-template-areas:
-		'. .       . '
-		'. buttons . '
-		'. .       . ';
-	grid-template-rows: 1fr max-content 0.15fr;
-	height: ${`${HEIGHT}px`};
-	width: ${`${WIDTH}px`};
-	border-radius: 10px;
-	position: absolute;
-	background: rgba(0,0,0,0.3);
-`;
-
-const ButtonContainer = styled.div`
-	grid-area: buttons;
-	display: flex;
-`;
-
 const iconCSS = css`
 	margin-top: -4px;
 	margin-left: 1px;
@@ -73,36 +53,56 @@ const Cart = styled(TiShoppingCart)`
 	${iconCSS}
 `;
 
-const Info = styled(AiOutlineInfoCircle)`
-	${iconCSS}
+const DetailsLink = styled(Link)`
+	margin: 0;
 `;
 
-function Card({ book }) {
-	const [display, setDisplay] = useState(false);
+const CardBody = styled(Card.Body)`
+	padding: 10px 0 10px 0;
+	padding-left: 0;
+	padding-right: 0;
+`;
+
+const CardButton = styled(Button)`
+	width: 150px;
+	align-self: center;
+`;
+
+
+function BookCard({ book }) {
 	return (
-		<Container
-			cover={book.cover}
-			onMouseEnter={() => setDisplay(true)}
-			onMouseLeave={() => setDisplay(false)}
-		>
-			{display && (
-				<BlurContainer>
-					<ButtonContainer>
-						{book?.link && <ExternalLink area="buy"  target='_blank' href={book.link}>Buy<Cart /></ExternalLink>}
-						<Link area="details" to={`books/${book.id}/`}>Details <Info /></Link>
-					</ButtonContainer>
-				</BlurContainer>
-			)}
-		</Container>
-	);
+		<CardContainer className="text-center">
+			<Link to={`books/${book.id}/`}>
+				<CardImage src={book?.cover} className="shadow"/>
+			</Link>
+			<CardBody className="d-flex flex-column">
+				<DetailsLink to={`books/${book.id}/`}>
+					<Card.Title>
+						{book?.shortTitle || book.title}
+					</Card.Title>
+				</DetailsLink>
+				<CardButton
+					className="mt-auto"
+					variant="dark"
+					target={book?.link && '_blank'}
+					href={book.link}
+					disabled={!book?.link}
+				>
+					Buy <Cart size={20} />
+				</CardButton>
+
+			</CardBody>
+		</CardContainer>
+	)
 }
 
-Card.propTypes = {
+BookCard.propTypes = {
 	book: PropTypes.shape({
 		id: PropTypes.string,
 		title: PropTypes.string,
+		shortTitle: PropTypes.string,
 		overview: PropTypes.string,
 		cover: PropTypes.string
 	}).isRequired
 };
-export default Card;
+export default BookCard;

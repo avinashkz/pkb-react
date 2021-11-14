@@ -27,7 +27,7 @@ const Image = styled.img`
 		max-width: 400px;
 	}
 	@media (min-width: 1600px) {
-		top: 20%;
+		top: 18%;
 		left: 7%;
 	}
 `;
