@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.27dc5b3d.chunk.css",
-    "main.js": "/static/js/main.115221eb.chunk.js",
-    "main.js.map": "/static/js/main.115221eb.chunk.js.map",
+    "main.js": "/static/js/main.c1299a80.chunk.js",
+    "main.js.map": "/static/js/main.c1299a80.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5758fcd.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5758fcd.js.map",
     "static/css/2.f2512455.chunk.css": "/static/css/2.f2512455.chunk.css",
-    "static/js/2.e51982b4.chunk.js": "/static/js/2.e51982b4.chunk.js",
-    "static/js/2.e51982b4.chunk.js.map": "/static/js/2.e51982b4.chunk.js.map",
+    "static/js/2.a91745c3.chunk.js": "/static/js/2.a91745c3.chunk.js",
+    "static/js/2.a91745c3.chunk.js.map": "/static/js/2.a91745c3.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.f2512455.chunk.css.map": "/static/css/2.f2512455.chunk.css.map",
     "static/css/main.27dc5b3d.chunk.css.map": "/static/css/main.27dc5b3d.chunk.css.map",
-    "static/js/2.e51982b4.chunk.js.LICENSE.txt": "/static/js/2.e51982b4.chunk.js.LICENSE.txt",
+    "static/js/2.a91745c3.chunk.js.LICENSE.txt": "/static/js/2.a91745c3.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.dcf236df.jpg",
     "static/media/10.jpg": "/static/media/10.366a3b25.jpg",
     "static/media/11.jpg": "/static/media/11.8ac8b0f6.jpg",
@@ -26,6 +26,8 @@
     "static/media/7.jpg": "/static/media/7.59bc27ab.jpg",
     "static/media/8.jpg": "/static/media/8.d8007a60.jpg",
     "static/media/9.jpg": "/static/media/9.e2b773f9.jpg",
+    "static/media/battle-beyond-kurukshetra.41345c80.jpg": "/static/media/battle-beyond-kurukshetra.41345c80.jpg",
+    "static/media/battle-beyond-kurukshetra.671fd862.jpg": "/static/media/battle-beyond-kurukshetra.671fd862.jpg",
     "static/media/bg-alpha2.caf83ec5.png": "/static/media/bg-alpha2.caf83ec5.png",
     "static/media/chandu-menon-oru-padanam.c2c5e918.jpg": "/static/media/chandu-menon-oru-padanam.c2c5e918.jpg",
     "static/media/chandu-menon-oru-padanam.e5cf0280.jpg": "/static/media/chandu-menon-oru-padanam.e5cf0280.jpg",
@@ -58,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.e5758fcd.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.e51982b4.chunk.js",
+    "static/js/2.a91745c3.chunk.js",
     "static/css/main.27dc5b3d.chunk.css",
-    "static/js/main.115221eb.chunk.js"
+    "static/js/main.c1299a80.chunk.js"
   ]
 }
