@@ -76,7 +76,7 @@ const ButtonContainer = styled.div`
 
 const renderTooltip = (props) => (
 	<Tooltip id="button-tooltip" {...props}>
-		Unavailable
+		Not available online
 	</Tooltip>
 );
 
