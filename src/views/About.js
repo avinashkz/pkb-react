@@ -7,9 +7,17 @@ const Container = styled.div`
 	text-justify: inter-word;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+	color: red;
+`;
 
-const SubTitle = styled.h2``;
+const SubTitle = styled.h2`
+`;
+
+const TextOne = styled.p`
+text-align: right;
+margin-left: 30rem;
+`;
 
 const Text = styled.p``;
 
@@ -17,7 +25,7 @@ function About () {
 	return (
 		<Container>
 			<Title>Heart of a storm</Title>
-			<Text>{"A powerhouse to be reckoned with in the intellectual space of Kerala, Balakrishnan was an author par excellence, a committed and daring journalist, a fiery orator and above all a great human being.He authored one of best and most widely read novels of the language,a controversial and original history of the state,and a series of studies unparalleled in their depth and understanding of the subject and originality of vision.He never took the beaten tracks in whatever he did. His vision and learning took him through unchartered territories which he conquered with his characteristic mastery."}</Text>
+			<TextOne>{"A powerhouse to be reckoned with in the intellectual space of Kerala, P.K Balakrishnan was an author par excellence, a committed and daring journalist, a fiery orator and above all else, a great human being. He authored one of best and most widely read novels of the language, a controversial and original history of the state, and a series of studies unparalleled in their depth and understanding of the subject and originality of vision. He never took the beaten track in whatever he did. His vision and learning took him through unchartered territories which he conquered with his characteristic mastery."}</TextOne>
 			<SubTitle>Childhood</SubTitle>
 			<Text>{"Edavanakkaad - that is the name of the beautiful village in Vypeen island off the coast of Ernakulam where Balakrishnan was born to Kesavan Asan and Mani in a middle class family. The youngest after three daughters, he had the pride of place in the family. His sisters were Janaki, Lakshmi and Parvathi. Nearest to him in age, he recalls Parvathy as his naughty sister constantly reporting on him and earning him frequent taste of the rod. He used to recall ruefully that after appreciating as ‘the great goat’, the dog he had made, she was instrumental in him being caught red handed while trying to taste the baked clay figure. With years his area of activity extended to the neighbourhood and then beyond with his cousins Sekharan, Chennan and Kesavan"}.</Text>
 			<Text>{"Edavanakkad, with its rustic beauty and winding country paths and canals were far away from development. It was accessible by boat only. The luxury carrier, the cycle came only later. His sister Parvathy remembers the grand spectacle of elephant crossing the canals that only had logs for people to cross. The elephants had to enter the canal and wade through amidst a big gathering watching and hooting. The child hood flavours of this beautiful village can be caught in his novel ‘Pluto’."}</Text>
