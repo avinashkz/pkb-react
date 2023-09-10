@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7eebc124.css",
-    "main.js": "/static/js/main.67755dc7.js",
+    "main.js": "/static/js/main.eecac7b2.js",
     "static/js/787.5e7a4f9d.chunk.js": "/static/js/787.5e7a4f9d.chunk.js",
     "static/media/11.jpg": "/static/media/11.8ac8b0f6370996298377.jpg",
     "static/media/14.jpg": "/static/media/14.2b6c8e14813a532865ea.jpg",
@@ -34,11 +34,11 @@
     "static/media/pk-balakrishnante-lekhanangal.jpg": "/static/media/pk-balakrishnante-lekhanangal.19384c5ffb150a8284bc.jpg",
     "index.html": "/index.html",
     "main.7eebc124.css.map": "/static/css/main.7eebc124.css.map",
-    "main.67755dc7.js.map": "/static/js/main.67755dc7.js.map",
+    "main.eecac7b2.js.map": "/static/js/main.eecac7b2.js.map",
     "787.5e7a4f9d.chunk.js.map": "/static/js/787.5e7a4f9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7eebc124.css",
-    "static/js/main.67755dc7.js"
+    "static/js/main.eecac7b2.js"
   ]
 }
