@@ -46,7 +46,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const keraleeyathayumMattum = {
   id: "keraleeyathayum-mattum",
   title: "Keraleeyathayum Mattum P K Balakrishnante Asamahrutha Rachanakal",
   shortTitle: "Keraleeyathayum Mattum",
@@ -59,3 +59,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default keraleeyathayumMattum;

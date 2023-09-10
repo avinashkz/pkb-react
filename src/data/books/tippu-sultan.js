@@ -37,7 +37,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const tippuSultan = {
   id: "tippu-sultan",
   title: "Tippu Sulthan",
   subtitle: "Category : HISTORY",
@@ -49,3 +49,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default tippuSultan;

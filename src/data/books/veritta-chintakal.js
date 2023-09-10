@@ -38,7 +38,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const verittaChintakal = {
   id: "veritta-chintakal",
   title: "Veritta Chintakal",
   subtitle: "Category : COLLECTIONS & SELECTED WORKS",
@@ -49,3 +49,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default verittaChintakal;

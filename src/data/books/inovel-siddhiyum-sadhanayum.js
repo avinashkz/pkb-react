@@ -35,7 +35,7 @@ const Contents = () => {
   );
 };
 
-export default {
+const inovelSiddhiyumSadhanayum = {
   id: "inovel-siddhiyum-sadhanayum",
   title: "Inovel Siddhiyum Sadhanayum",
   subtitle: "Category : STUDY",
@@ -47,3 +47,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default inovelSiddhiyumSadhanayum;

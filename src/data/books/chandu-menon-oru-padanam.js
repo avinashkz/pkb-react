@@ -31,7 +31,7 @@ const Contents = () => {
   );
 };
 
-export default {
+const chanduMenonOruPadanam = {
   id: "chandu-menon-oru-padanam",
   title: "Chandu Menon Oru Padanam",
   subtitle: "Category : STUDY",
@@ -43,3 +43,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default chanduMenonOruPadanam;

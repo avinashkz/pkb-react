@@ -33,7 +33,7 @@ const Contents = () => {
   );
 };
 
-export default {
+const ezhuthachanteKala = {
   id: "ezhuthachante-kala",
   title: "Ezhuthachante Kala : Chila Vyasabharatha Patanangalum",
   shortTitle: "Ezhuthachante Kala",
@@ -46,3 +46,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default ezhuthachanteKala;

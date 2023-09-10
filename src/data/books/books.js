@@ -31,7 +31,7 @@ export const books = {
   "veritta-chintakal": verittaChintakal,
 };
 
-export default [
+const booksList = [
   battleBeyondKurukshetra,
   iniNjanUrangatte,
   jaathivyavasthithiumKeralacharithravum,
@@ -47,3 +47,5 @@ export default [
   veerapulakom,
   verittaChintakal,
 ];
+
+export default booksList;
