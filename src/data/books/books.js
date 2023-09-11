@@ -16,7 +16,8 @@ import verittaChintakal from "./veritta-chintakal";
 export const books = {
   "battle-beyond-kurukshetra": battleBeyondKurukshetra,
   "ini-njan-urangatte": iniNjanUrangatte,
-  "jaathivyavasthithium-keralacharithravum": jaathivyavasthithiumKeralacharithravum,
+  "jaathivyavasthithium-keralacharithravum":
+    jaathivyavasthithiumKeralacharithravum,
   narayanaguru: narayanaguru,
   "tippu-sultan": tippuSultan,
   "pk-balakrishnante-lekhanangal": pkBalakrishnanteLekhanangal,
@@ -30,7 +31,7 @@ export const books = {
   "veritta-chintakal": verittaChintakal,
 };
 
-export default [
+const booksList = [
   battleBeyondKurukshetra,
   iniNjanUrangatte,
   jaathivyavasthithiumKeralacharithravum,
@@ -46,3 +47,5 @@ export default [
   veerapulakom,
   verittaChintakal,
 ];
+
+export default booksList;

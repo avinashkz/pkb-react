@@ -31,7 +31,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const jaathivyavasthithiumKeralacharithravum = {
   id: "jaathivyavasthithium-keralacharithravum",
   title: "Jaathivyavasthithium Keralacharithravum",
   subtitle: "The Caste system and History of Kerala (1983)",
@@ -43,3 +43,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default jaathivyavasthithiumKeralacharithravum;

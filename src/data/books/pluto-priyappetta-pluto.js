@@ -19,7 +19,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const plutoPriyappettaPluto = {
   id: "pluto-priyappetta-pluto",
   title: "Pluto Priyappetta Pluto",
   subtitle: "Category : NOVEL",
@@ -31,3 +31,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default plutoPriyappettaPluto;

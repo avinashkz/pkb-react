@@ -34,16 +34,18 @@ const Contents = () => {
     </>
   );
 };
-export default {
+
+const battleBeyondKurukshetra = {
   id: "battle-beyond-kurukshetra",
   title: "Battle Beyond Kurukshetra",
   subtitle: "A Mahabharata Novel",
   overview:
     "This is the English translation of the Malayalam classic of Balakrishnan’s Ïni Njan Urangatte, a work originating from the Vyasabharatha. The novel is the journey of Draupadi’s realisation.  The novel is enriched by its insightful take on life which is complemented by beautiful imagery and lyrical prose.",
   description: "",
-  link:
-    "https://www.amazon.in/Battle-Beyond-Kurukshetra-Balakrishnan-Jayalekshmy/dp/0199480168",
+  link: "https://www.amazon.in/Battle-Beyond-Kurukshetra-Balakrishnan-Jayalekshmy/dp/0199480168",
   thumbnail,
   cover,
   contents: Contents,
 };
+
+export default battleBeyondKurukshetra;

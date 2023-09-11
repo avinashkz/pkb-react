@@ -89,7 +89,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const narayanaguru = {
   id: "narayanaguru",
   title: "Narayanaguru",
   subtitle: "Category : COLLECTIONS & SELECTED WORKS",
@@ -101,3 +101,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default narayanaguru;

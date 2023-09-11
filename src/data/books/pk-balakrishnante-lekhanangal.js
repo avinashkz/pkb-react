@@ -75,7 +75,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const balakrishnanteLekhanangal = {
   id: "pk-balakrishnante-lekhanangal",
   title: "P K Balakrishnante Lekhanangal",
   subtitle: "Category : COLLECTIONS & SELECTED WORKS",
@@ -87,3 +87,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default balakrishnanteLekhanangal;

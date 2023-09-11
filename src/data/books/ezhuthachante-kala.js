@@ -33,7 +33,7 @@ const Contents = () => {
   );
 };
 
-export default {
+const ezhuthachanteKala = {
   id: "ezhuthachante-kala",
   title: "Ezhuthachante Kala : Chila Vyasabharatha Patanangalum",
   shortTitle: "Ezhuthachante Kala",
@@ -41,9 +41,10 @@ export default {
   overview:
     "The book is a collection of essays on the great social reformer of Kerala and spiritual leader Sri. Narayana Guru published on the event of his birth centenary. It gives a rare insight into the person and activities of a visionary.",
   description: "",
-  link:
-    "https://dcbookstore.com/books/ezhuthachante-kala-chila-vyasabharatha-patanangalum",
+  link: "https://dcbookstore.com/books/ezhuthachante-kala-chila-vyasabharatha-patanangalum",
   thumbnail,
   cover,
   contents: Contents,
 };
+
+export default ezhuthachanteKala;

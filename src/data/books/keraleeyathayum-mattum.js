@@ -46,7 +46,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const keraleeyathayumMattum = {
   id: "keraleeyathayum-mattum",
   title: "Keraleeyathayum Mattum P K Balakrishnante Asamahrutha Rachanakal",
   shortTitle: "Keraleeyathayum Mattum",
@@ -54,9 +54,10 @@ export default {
   overview:
     "The studies in this book were written over a span of 18 years from 1960. They were born out of a sense of duty impelled by the warmth of his personal affection.",
   description: "",
-  link:
-    "https://dcbookstore.com/books/keraleeyathayum-mattum-p-k-balakrishnante-asamahrutha-rachanakal",
+  link: "https://dcbookstore.com/books/keraleeyathayum-mattum-p-k-balakrishnante-asamahrutha-rachanakal",
   thumbnail,
   cover,
   contents: Contents,
 };
+
+export default keraleeyathayumMattum;

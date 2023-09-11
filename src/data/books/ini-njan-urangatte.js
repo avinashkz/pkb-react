@@ -74,7 +74,7 @@ const Contents = () => {
   );
 };
 
-export default {
+const iniNjanUrangatte = {
   id: "ini-njan-urangatte",
   title: "Ini Njan Urangatte",
   subtitle: "And Now Let Me Sleep (1973)",
@@ -86,3 +86,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default iniNjanUrangatte;

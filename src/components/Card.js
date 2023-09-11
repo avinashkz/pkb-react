@@ -1,6 +1,5 @@
 import React from "react";
 import { Link as UnstyledLink } from "react-router-dom";
-import { AiOutlineInfoCircle } from "react-icons/ai";
 import { TiShoppingCart } from "react-icons/ti";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components/macro";

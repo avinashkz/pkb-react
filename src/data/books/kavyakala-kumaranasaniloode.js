@@ -36,7 +36,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const kavyakalaKumaranasaniloode = {
   id: "kavyakala-kumaranasaniloode",
   title: "Kavyakala Kumaranasaniloode",
   subtitle: "Category : STUDY",
@@ -48,3 +48,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default kavyakalaKumaranasaniloode;

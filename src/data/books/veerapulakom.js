@@ -57,7 +57,7 @@ const Contents = () => {
     </>
   );
 };
-export default {
+const veerapulakom = {
   id: "veerapulakom",
   title: "Veerapulakom",
   subtitle: "Category : HISTORY",
@@ -68,3 +68,5 @@ export default {
   cover,
   contents: Contents,
 };
+
+export default veerapulakom;
